@@ -27,7 +27,9 @@ jobs:
     - name: Setup Node
       uses: actions/setup-node@v3.9.1
       with:
-         node-version: 16.x
+         node-version: 16.x 
+    - name: List files
+      run: ls -la ./Common
     - name: Build - NET 8 Server
       run: dotnet build Blazor-Server-Demos/Blazor_Server_Demos_NET8.csproj -c Release
     - name: Build - NET 9 Server
